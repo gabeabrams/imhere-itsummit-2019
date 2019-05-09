@@ -25,7 +25,7 @@ module.exports = (app) => {
   });
 
   app.post('/events/:id', async (req, res) => {
-    // Capture input from Scan to Attend page
+    // Capture input from the Scan to attend page
     req.api.course.assignment.updateGrade({
       courseId: req.session.launchInfo.courseId,
       assignmentId: req.params.id,
