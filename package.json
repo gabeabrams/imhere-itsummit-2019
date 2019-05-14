@@ -1,19 +1,27 @@
 {
-  "name": "imhere-itsummit-2019",
-  "version": "1.0.0",
-  "description": "CACCL demo app for the 2019 Harvard IT Summit",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gabeabrams/imhere-itsummit-2019.git"
-  },
-  "author": "Gabriel Abrams <gabeabrams@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/gabeabrams/imhere-itsummit-2019/issues"
-  },
-  "homepage": "https://github.com/gabeabrams/imhere-itsummit-2019#readme"
+	"name": "imhere-itsummit-2019",
+	"version": "1.0.0",
+	"description": "CACCL demo app for the 2019 Harvard IT Summit",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node index.js",
+		"build": "npm install",
+		"dev:canvas": "node ./node_modules/caccl/canvas/startPartialSimulation",
+		"dev:server": "export DEV=true;npm start"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/gabeabrams/imhere-itsummit-2019.git"
+	},
+	"author": "Gabriel Abrams <gabeabrams@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/gabeabrams/imhere-itsummit-2019/issues"
+	},
+	"homepage": "https://github.com/gabeabrams/imhere-itsummit-2019#readme",
+	"dependencies": {
+		"caccl": "^1.0.79",
+		"ejs": "^2.6.1"
+	}
 }
